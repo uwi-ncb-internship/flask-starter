@@ -20,7 +20,7 @@ def products():
             "id": product.id,
             "name": product.name,
             "description": product.description,
-            "image": "http://localhost:5000/images/" + product.image,
+            "image": "/images/" + product.image,
             "price": product.price
         })
     return jsonify({ "products": data })
