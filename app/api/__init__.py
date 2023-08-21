@@ -58,7 +58,7 @@ def product_details(id):
         "name": product.name,
         "description": product.description,
         "price": product.price,
-        "image": "http://localhost:5000/images/" + product.image,
+        "image": "/images/" + product.image,
     })
 
 @api.after_request
